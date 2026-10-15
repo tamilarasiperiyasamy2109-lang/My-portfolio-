@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamilarasi | My Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7ff;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #171c3b;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h2 {
+            color: #7c83ff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        nav a:hover {
+            color: #7c83ff;
+        }
+
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #171c3b, #5148c8);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .hero span {
+            color: #a9adff;
+        }
+
+        .hero p {
+            max-width: 600px;
+            margin: 15px 0 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #7c83ff;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            margin: 5px;
+        }
+
+        .btn:hover {
+            background: #6269e8;
+        }
+
+        section {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 30px;
+            color: #5148c8;
+            margin-bottom: 25px;
+        }
+
+        .about p {
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .skills, .projects {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px #00000012;
+            width: 260px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #5148c8;
+            margin-bottom: 10px;
+        }
+
+        .contact p {
+            margin: 10px;
+        }
+
+        footer {
+            background: #171c3b;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <h2>Tamilarasi.</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
+        <h1>Hello, I'm <span>Tamilarasi</span></h1>
+        <h3>Aspiring Software Engineer</h3>
+
+        <p>
+            I am a college student passionate about programming,
+            technology, and building creative software projects.
+            I enjoy learning new skills and solving problems.
+        </p>
+
+        <a href="#projects" class="btn">View My Projects</a>
+        <a href="#contact" class="btn">Contact Me</a>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Me</h2>
+
+        <p>
+            I am a college student working towards becoming a
+            software engineer. I am learning programming and
+            developing my technical skills through academic
+            projects and practical experience. My goal is to
+            create useful and innovative applications.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills">
+            <div class="card">
+                <h3>HTML</h3>
+                <p>Creating the structure of web pages.</p>
+            </div>
+
+            <div class="card">
+                <h3>CSS</h3>
+                <p>Designing colourful and responsive websites.</p>
+            </div>
+
+            <div class="card">
+                <h3>C Programming</h3>
+                <p>Learning programming logic and problem-solving.</p>
+            </div>
+
+            <div class="card">
+                <h3>Python</h3>
+                <p>Exploring programming and automation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="projects">
+            <div class="card">
+                <h3>Personal Portfolio</h3>
+                <p>A website to showcase my skills, education,
+                   projects, and achievements.</p>
+            </div>
+
+            <div class="card">
+                <h3>Pong Game</h3>
+                <p>A simple game project created to practise
+                   programming logic and game development.</p>
+            </div>
+
+            <div class="card">
+                <h3>AI Voice Shield</h3>
+                <p>An AI-based project idea to detect voice-cloning
+                   impersonation and help prevent fraud.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+
+        <p>Email: your-email@example.com</p>
+        <p>Location: Tamil Nadu, India</p>
+
+        <a href="mailto:your-email@example.com" class="btn">
+            Send Me an Email
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Tamilarasi. All Rights Reserved.</p>
+        <p>Designed with ❤️ by Tamilarasi</p>
+    </footer>
+
+</body>
+</html>
